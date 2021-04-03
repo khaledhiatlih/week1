@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 1.5rem;
+}
+
+body {
+	background-image: url(istockphoto-950485678-612x612.jpg);
+	background-size: auto;
+}
+
+.main-info {
+	margin: auto;
+	width: 500px;
+	text-align: center;
+}
+
+.main-info img {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	filter: grayscale(100%);
+	cursor: pointer;
+	transition: 500ms;
+	box-shadow: 0 10px 20px #c5aa7c;
+	border: solid 6px rgb(219, 219, 219);
+}
+
+.main-info:hover img {
+	filter: grayscale(0);
+}
+
+.flexbox-con {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+.flexbox-con-left {
+	flex-direction: column;
+	justify-content: center;
+}
+
+.flexbox-item {
+	width: 200px;
+	margin: 10px;
+	border: 3px solid rgb(0, 17, 75);
+	background-color: rgb(202, 202, 202);
+}
+
+.fitm-1 {
+	min-height: 200px;
+	align-content: center;
+	padding: 10px;
+}
+
+.info-list {
+	list-style: none;
+}
+
+.fitm-1 h2 {
+	padding-top: 10px;
+}
+
+.fitm-2 {
+	min-height: 200px;
+	align-items: center;
+	padding-top: 10px;
+	padding: 10px;
+}
+
+.flexbox-con-right .fitm-1 {
+	min-height: 200px;
+	width: 400px;
+}
+.flexbox-con-right .fitm-2 {
+	min-height: 200px;
+	width: 400px;
+}
+
+.fitm-3 {
+	min-height: 200px;
+	align-items: center;
+	padding-top: 10px;
+	padding: 10px;
+}
+
+.flexbox-con-right {
+	flex-direction: column;
+}
+
+@media only screen and (max-width: 760px) {
+	.flexbox-con {
+		flex-direction: column;
+		width: 100%;
+		margin: auto;
+		align-items: center;
+	}
+
+	.flexbox-con-left .fitm-2 {
+		width: 400px;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.flexbox-con-left .fitm-1 {
+		width: 400px;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.flexbox-con-right .fitm-2 {
+		text-align: center;
+	}
+
+	.flexbox-con-right .fitm-1 {
+		text-align: center;
+	}
+
+	ul {
+		margin: 20px;
+		list-style-position: inside;
+	}
+}
+
+.footer {
+	text-align: center;
+	padding: 20px;
+	font-style: italic;
+	font-weight: lighter;
+}
