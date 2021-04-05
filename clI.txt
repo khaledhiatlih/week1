@@ -1,0 +1,14 @@
+To create a hidden file, we can use a period .
+example:
+$ touch .filename.txt  or mkdir .foldername
+
+
+To create a multiple nested directors we can use -p 
+Example:
+Mkdir -p this/is/for/fun
+
+To append a message to a file we can use echo and -n
+Example:
+$ touch file.txt
+$ echo first massage > file.txt
+$ echo -n second massage >> file.txt
